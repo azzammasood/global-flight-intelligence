@@ -4,7 +4,7 @@ A real-time, end-to-end data engineering pipeline capturing, processing, and vis
 
 ---
 
-## 🏗️ Architecture Stack
+## Architecture Stack
 
 ![Architecture Overview](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Grafana_logo.svg/200px-Grafana_logo.svg.png) <!-- Just an example logo space -->
 
@@ -15,14 +15,14 @@ A real-time, end-to-end data engineering pipeline capturing, processing, and vis
 5. **Analytical Database**: **ClickHouse**, a blazing-fast open-source column-oriented database management system. The Go consumer uses bulk inserts to write thousands of rows efficiently.
 6. **Data Visualization**: **Grafana** connects to ClickHouse via the native plugin to render live geomaps, time-series charts, and gauges of active flights.
 
-## 🚀 Key Features
+## Features
 
 * **Real-time Geomapping**: Visualizing aircraft longitude/latitude, altitude, and speed on a live world map.
 * **Efficient Storage schema**: ClickHouse tables are optimized with `MergeTree` engines for high-speed timeseries ingestion.
 * **Automated Provisioning**: Grafana data sources and dashboards are provisioned via code (Infrastructure as Code approach), letting you spin up the entire stack with zero manual UI configuration.
 * **Concurrent Go Processing**: Showcasing Goroutines, context management, and graceful shutdown patterns.
 
-## 💻 Getting Started
+## Setup guide
 
 ### Prerequisites
 * Docker & Docker Compose
@@ -50,9 +50,6 @@ Open your browser and navigate to `http://localhost:3000`.
 Log in with the default credentials (`admin`/`admin`). 
 Navigate to **Dashboards > Flight Intel Command Center** to see the live flight data visualization!
 
-## 📸 Dashboard Preview
+## Dashboard Preview
 
-*(Add a screenshot of your Grafana dashboard here before uploading to LinkedIn!)*
-
----
-> **Portfolio Note**: This project demonstrates handling complex distributed systems, high-speed streaming components (Kafka), high-performance analytical databases (ClickHouse), and Go concurrent programming.
+![alt text](image.png)
