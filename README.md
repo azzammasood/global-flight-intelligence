@@ -4,9 +4,7 @@ A real-time, end-to-end data engineering pipeline capturing, processing, and vis
 
 ---
 
-## Architecture Stack
-
-![Architecture Overview](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Grafana_logo.svg/200px-Grafana_logo.svg.png) <!-- Just an example logo space -->
+## Architecture
 
 1. **Data Source**: Live flight vectors from the [OpenSky Network API](https://opensky-network.org/).
 2. **Data Ingestion (Producer)**: A **Golang** service that periodically polls the API and publishes raw flight data to Kafka.
