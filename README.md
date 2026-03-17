@@ -50,4 +50,8 @@ Navigate to **Dashboards > Flight Intel Command Center** to see the live flight 
 
 ## Dashboard Preview
 
-![alt text](image.png)
+![alt text](<Dashboard Preview.png>)
+
+## Complete Setup Preview
+
+![alt text](<Complete Setup.png>)
